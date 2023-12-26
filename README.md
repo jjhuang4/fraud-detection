@@ -2,6 +2,8 @@
 
 ## Overview:
 
+Dataset can be found on Kaggle: 
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud 
 - Most features in data derived from PCA
 - Feature names / descriptions are obfuscated for confidentiality
 - Extreme class imbalance

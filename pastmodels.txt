@@ -1,0 +1,9 @@
+Test2, Logistic
+TimeV1V2V3V4V5Amount
+0.5058719568158246, 0.867882767907388, 0.47949155251175335
+Test, Logistic, 0.4
+, Time, V1
+0.502, 0.714, 0.442
+Test3, Logistic, 0.55
+, Time, V1, V2, V3, V4, V5
+0.515, 0.923, 0.515

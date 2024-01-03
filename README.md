@@ -1,5 +1,14 @@
 # fraud-detection
 
+## Purpose
+
+I am building a dashboard to see if I can facilitate the model training and development process. 
+A lot of my prior experience with machine learning involved heavy amounts of scrolling back up in a bloated notebook,
+and losing track of past important results. 
+
+The motivation behind this project is to see if the upfront work put into building a dashboard will offset the 
+time-consuming process of iteratively finding the best model.
+
 ## Overview:
 
 Dataset can be found on Kaggle: 
@@ -7,6 +16,10 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 - Most features in data derived from PCA
 - Feature names / descriptions are obfuscated for confidentiality
 - Extreme class imbalance
+
+## Running
+
+To run the dashboard, type "streamlit run server.py" within the command terminal.
 
 ## EDA
 
@@ -26,13 +39,9 @@ Because of highly imbalanced dataset, must consider implementing cost-sensitive 
   - Alternatively, use costs as penalty for mis-classification (add to error)
   - Cost sensitive / class weighted logistic regression
 
-Ideas for current models include:
-- Logistic Regression / Probit Regression as benchmark
-- Support Vector Machine
-- Random Forest Classifier
-- Decision Tree Classifier
+Currently implementing balanced logistic regression as benchmark model.
 
-Feature selection is necessary to prevent overfitting. Method of dealing with unbalanced datasets is under-sampling / over-sampling.
+Feature selection is necessary to prevent overfitting and offset effects of large dimensionality. Method of dealing with unbalanced datasets is under-sampling / over-sampling.
 
 ## Model Training Order
 

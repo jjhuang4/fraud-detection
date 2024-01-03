@@ -1,9 +1,39 @@
-Test2, Logistic
-TimeV1V2V3V4V5Amount
-0.5058719568158246, 0.867882767907388, 0.47949155251175335
-Test, Logistic, 0.4
-, Time, V1
-0.502, 0.714, 0.442
-Test3, Logistic, 0.55
-, Time, V1, V2, V3, V4, V5
-0.515, 0.923, 0.515
+Test 1, Logistic, 10 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, 
+Precision: 0.528, Recall: 0.936, Fscore: 0.546
+Test 2, Logistic, 7 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, 
+Precision: 0.595, Recall: 0.936, Fscore: 0.655
+Test 2, Logistic, 6 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, 
+Precision: 0.524, Recall: 0.929, Fscore: 0.539
+Test 2, Logistic, 6 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, 
+Precision: 0.589, Recall: 0.92, Fscore: 0.645
+Test 3, Random Forest, 6 principal components, Undersampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, 
+Precision: 0.521, Recall: 0.907, Fscore: 0.531
+Test 4, Random Forest, 8 principal components, Undersampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, 
+Precision: 0.506, Recall: 0.896, Fscore: 0.478
+Test 4, Random Forest, 10 principal components, Undersampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, V22, V23, V24, V25, V26, V27, V28, 
+Precision: 0.514, Recall: 0.923, Fscore: 0.514
+Test 4, Random Forest, 8 principal components, Undersampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, V22, V23, V24, V25, V26, V27, V28, 
+Precision: 0.513, Recall: 0.906, Fscore: 0.512
+Test 5, Random Forest, 7 principal components, Undersampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, V22, V23, V24, V25, V26, V27, V28, 
+Precision: 0.517, Recall: 0.936, Fscore: 0.521
+Test 6, Logistic, 7 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, V22, V23, V24, V25, V26, V27, V28, 
+Precision: 0.514, Recall: 0.899, Fscore: 0.516
+Test 7, Logistic, 9 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, V22, V23, V24, V25, V26, V27, V28, 
+Precision: 0.554, Recall: 0.933, Fscore: 0.594
+Test 7, Random Forest, 7 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, V22, V23, V24, V25, V26, V27, V28, 
+Precision: 0.549, Recall: 0.947, Fscore: 0.585
+Test 7, Random Forest, 11 principal components, Oversampling
+Time, V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V15, V16, V14, V17, V18, V19, V20, V21, Amount, V22, V23, V24, V25, V26, V27, V28, 
+Precision: 0.569, Recall: 0.909, Fscore: 0.616

@@ -28,6 +28,10 @@ Included within the dashboard are:
 - A tab showing logs of past models for backtracking 
 - A tab showing analysis of models and evaluations
 
+## Report
+
+A report giving an overview of the development / training process as well as a summary of results from using the dashboard is provided as a pdf.
+
 ## EDA
 
 - Features are unknown and dataset has high dimensionality (~30 explanatory variables)

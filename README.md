@@ -30,7 +30,7 @@ Included within the dashboard are:
 
 ## Report
 
-A report giving an overview of the development / training process as well as a summary of results from using the dashboard is provided as a pdf.
+A report giving an overview of the development / training process as well as a summary of results from using the dashboard is provided, titled "Credit Card Fraud Report.pdf".
 
 ## EDA
 

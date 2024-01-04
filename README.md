@@ -21,6 +21,11 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 To run the dashboard, type "streamlit run server.py" within the command terminal.
 
+Included within the dashboard are:
+- A tab where user can input parameters to train a model
+- A tab showing logs of past models for backtracking 
+- A tab showing analysis of models and evaluations
+
 ## EDA
 
 - Features are unknown and dataset has high dimensionality (~30 explanatory variables)
@@ -40,6 +45,7 @@ Because of highly imbalanced dataset, must consider implementing cost-sensitive 
   - Cost sensitive / class weighted logistic regression
 
 Currently implementing balanced logistic regression as benchmark model.
+Currently also supporting random forest classification.
 
 Feature selection is necessary to prevent overfitting and offset effects of large dimensionality. Method of dealing with unbalanced datasets is under-sampling / over-sampling.
 

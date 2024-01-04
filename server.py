@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 import os
+import csv
 
 # Reading in dataset
 df = pd.read_csv("creditcard.csv")
@@ -79,10 +82,17 @@ def record_model(name, model, resample, pca, featurelist, precision, recall, fsc
         file.write(f"{vars}\n")
         scores = f"Precision: {round(precision, 3)}, Recall: {round(recall, 3)}, Fscore: {round(fscore, 3)}\n"
         file.write(scores)
+    with open('modelevals.csv', 'a') as file:
+        csv.writer(file).writerow([name, model, resample, pca, len(featurelist),
+                                  round(precision, 3), round(recall, 3), round(fscore, 3)])
 
 def clear_logs():
     with open('pastmodels.txt', 'w') as file:
         pass
+def clear_modelevals():
+    with open('modelevals.csv', 'w') as file:
+        csv.writer(file).writerow(['Name', 'Algorithm', 'Resample', 'PCA', 'Features',
+                                   'Precision', 'Recall', 'Fscore'])
 def display_dashboard_UI():
     # Building dashboard UI
     # Setting hyperparameters, feature selection
@@ -131,14 +141,48 @@ def display_logs_UI():
             for line in content:
                 st.write(line)
     show_models()
-    st.write("\nWarning: clearing will remove all records with no chance of undoing action.")
-    if st.button("Clear past models"):
+    st.write("\nWarning: clearing will delete all logs with no chance of undoing action.")
+    st.write("Click twice to fully confirm deletion")
+    if st.button("Clear model logs"):
         clear_logs()
         show_models()
 
+def display_analysis_UI():
+    try:
+        df_evals = pd.read_csv('modelevals.csv')
+        st.dataframe(df_evals)
+    except Exception as e:
+        st.write("Model records currently empty, add additional models")
+        pass
+
+    model_filter = st.radio("Algorithm used: ", ("Logistic", "Random Forest"))
+    resample_filter = st.radio("Resampling method used: ", ("Undersampling", "Oversampling"))
+    metrics = st.multiselect("Choose metrics: ", ['Precision', 'Recall', 'Fscore'])
+
+    colors = []
+    if len(metrics) == 0:
+        metrics = ['Fscore']
+    if len(metrics) == 1:
+        colors = ["#FF5100"]
+    elif len(metrics) == 2:
+        colors = ["#FF5100", "#86FF45"]
+    elif len(metrics) == 3:
+        colors = ["#FF5100", "#86FF45", "#2667FF"]
+    df_filtered = df_evals[(df_evals['Algorithm'] == model_filter) &
+                           (df_evals['Resample'] == resample_filter)]
+    st.dataframe(df_filtered)
+    st.line_chart(df_filtered, x='PCA', y=metrics, color=colors)
+
+    st.write("\nWarning: clearing will remove all model evaluation data with no chance of undoing action.")
+    st.write("Click twice to fully confirm deletion")
+    if st.button("Clear model data"):
+        clear_modelevals()
+
 st.title("Credit Card Fraud Detection Model Development")
-tab1, tab2 = st.tabs(["Dashboard", "Logs"])
+tab1, tab2, tab3 = st.tabs(["Dashboard", "Logs", "Analysis"])
 with tab1:
     display_dashboard_UI()
 with tab2:
     display_logs_UI()
+with tab3:
+    display_analysis_UI()

@@ -1,0 +1,94 @@
+Name,Algorithm,Resample,PCA,Features,Precision,Recall,FscoreTest,Logistic,Oversampling,0,30,0.516,0.946,0.52
+Test,Logistic,Oversampling,1,30,0.849,0.903,0.874
+Test,Logistic,Oversampling,2,30,0.601,0.865,0.658
+Test,Logistic,Oversampling,3,30,0.531,0.898,0.552
+Test,Logistic,Oversampling,4,30,0.529,0.892,0.549
+Test,Logistic,Oversampling,5,30,0.545,0.901,0.577
+Test,Logistic,Oversampling,6,30,0.517,0.898,0.523
+Test,Logistic,Oversampling,7,30,0.563,0.893,0.607
+Test,Logistic,Oversampling,8,30,0.523,0.894,0.536
+Test,Logistic,Oversampling,9,30,0.539,0.895,0.567
+Test,Logistic,Oversampling,10,30,0.568,0.929,0.616
+Test,Logistic,Oversampling,11,30,0.546,0.921,0.58
+Test,Logistic,Oversampling,12,30,0.641,0.922,0.71
+Test,Logistic,Oversampling,13,30,0.547,0.916,0.582
+Test,Logistic,Oversampling,14,30,0.586,0.92,0.642
+Test,Logistic,Oversampling,15,30,0.524,0.919,0.538
+Test,Logistic,Oversampling,16,30,0.528,0.926,0.546
+Test,Logistic,Oversampling,17,30,0.582,0.93,0.636
+Test,Logistic,Oversampling,18,30,0.575,0.96,0.626
+Test,Logistic,Oversampling,19,30,0.53,0.947,0.55
+Test,Logistic,Oversampling,20,30,0.523,0.918,0.536
+Test,Logistic,Oversampling,21,30,0.526,0.974,0.541
+Test,Logistic,Oversampling,22,30,0.62,0.952,0.688
+Test,Logistic,Oversampling,23,30,0.521,0.956,0.53
+Test,Logistic,Oversampling,24,30,0.527,0.951,0.545
+Test,Logistic,Oversampling,25,30,0.572,0.949,0.622
+Test,Logistic,Undersampling,0,30,0.512,0.903,0.508
+Test,Logistic,Undersampling,1,30,0.55,0.887,0.586
+Test,Logistic,Undersampling,2,30,0.901,0.913,0.907
+Test,Logistic,Undersampling,3,30,0.568,0.939,0.616
+Test,Logistic,Undersampling,4,30,0.523,0.913,0.535
+Test,Logistic,Undersampling,5,30,0.51,0.892,0.5
+Test,Logistic,Undersampling,6,30,0.548,0.937,0.584
+Test,Logistic,Undersampling,7,30,0.557,0.943,0.598
+Test,Logistic,Undersampling,8,30,0.508,0.899,0.489
+Test,Logistic,Undersampling,9,30,0.516,0.925,0.518
+Test,Logistic,Undersampling,10,30,0.514,0.894,0.515
+Test,Logistic,Undersampling,11,30,0.517,0.898,0.522
+Test,Logistic,Undersampling,12,30,0.517,0.879,0.523
+Test,Logistic,Undersampling,13,30,0.512,0.932,0.507
+Test,Logistic,Undersampling,14,30,0.51,0.912,0.5
+Test,Logistic,Undersampling,15,30,0.51,0.913,0.502
+Test,Logistic,Undersampling,16,30,0.51,0.908,0.502
+Test,Logistic,Undersampling,17,30,0.508,0.917,0.491
+Test,Logistic,Undersampling,18,30,0.508,0.893,0.492
+Test,Logistic,Undersampling,19,30,0.509,0.899,0.498
+Test,Logistic,Undersampling,20,30,0.51,0.913,0.502
+Test,Logistic,Undersampling,21,30,0.509,0.908,0.497
+Test,Logistic,Undersampling,22,30,0.512,0.913,0.508
+Test,Logistic,Undersampling,23,30,0.513,0.948,0.508
+Test,Logistic,Undersampling,24,30,0.512,0.918,0.508
+Test,Logistic,Undersampling,25,30,0.508,0.897,0.491
+Test,Random Forest,Oversampling,0,30,0.529,0.941,0.549
+Test,Random Forest,Oversampling,1,30,0.53,0.862,0.551
+Test,Random Forest,Oversampling,2,30,0.533,0.898,0.556
+Test,Random Forest,Oversampling,3,30,0.525,0.929,0.539
+Test,Random Forest,Oversampling,4,30,0.522,0.922,0.533
+Test,Random Forest,Oversampling,5,30,0.592,0.925,0.65
+Test,Random Forest,Oversampling,6,30,0.557,0.918,0.598
+Test,Random Forest,Oversampling,7,30,0.538,0.925,0.566
+Test,Random Forest,Oversampling,8,30,0.534,0.909,0.558
+Test,Random Forest,Oversampling,9,30,0.569,0.894,0.615
+Test,Random Forest,Oversampling,10,30,0.81,0.908,0.852
+Test,Random Forest,Oversampling,11,30,0.662,0.897,0.729
+Test,Random Forest,Oversampling,12,30,0.615,0.941,0.681
+Test,Random Forest,Oversampling,13,30,0.542,0.936,0.573
+Test,Random Forest,Oversampling,14,30,0.781,0.938,0.842
+Test,Random Forest,Oversampling,15,30,0.578,0.94,0.63
+Test,Random Forest,Oversampling,16,30,0.52,0.911,0.53
+Test,Random Forest,Oversampling,17,30,0.551,0.967,0.588
+Test,Random Forest,Oversampling,18,30,0.516,0.912,0.521
+Test,Random Forest,Oversampling,19,30,0.593,0.925,0.651
+Test,Random Forest,Oversampling,20,30,0.514,0.912,0.513
+Test,Random Forest,Undersampling,0,30,0.512,0.938,0.508
+Test,Random Forest,Undersampling,1,30,0.606,0.911,0.667
+Test,Random Forest,Undersampling,2,30,0.517,0.898,0.523
+Test,Random Forest,Undersampling,3,30,0.524,0.924,0.538
+Test,Random Forest,Undersampling,4,30,0.537,0.884,0.563
+Test,Random Forest,Undersampling,5,30,0.54,0.905,0.57
+Test,Random Forest,Undersampling,6,30,0.541,0.935,0.571
+Test,Random Forest,Undersampling,7,30,0.551,0.907,0.588
+Test,Random Forest,Undersampling,8,30,0.527,0.916,0.545
+Test,Random Forest,Undersampling,9,30,0.515,0.899,0.516
+Test,Random Forest,Undersampling,10,30,0.531,0.913,0.553
+Test,Random Forest,Undersampling,11,30,0.529,0.922,0.548
+Test,Random Forest,Undersampling,12,30,0.508,0.909,0.493
+Test,Random Forest,Undersampling,13,30,0.509,0.919,0.493
+Test,Random Forest,Undersampling,14,30,0.525,0.915,0.541
+Test,Random Forest,Undersampling,15,30,0.533,0.928,0.557
+Test,Random Forest,Undersampling,16,30,0.599,0.89,0.657
+Test,Random Forest,Undersampling,17,30,0.523,0.943,0.536
+Test,Random Forest,Undersampling,18,30,0.509,0.893,0.496
+Test,Random Forest,Undersampling,19,30,0.521,0.921,0.531
+Test,Random Forest,Undersampling,20,30,0.52,0.941,0.53

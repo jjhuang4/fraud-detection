@@ -17,6 +17,8 @@ https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 - Feature names / descriptions are obfuscated for confidentiality
 - Extreme class imbalance
 
+Dataset needs to be downloaded locally before use.
+
 ## Running
 
 To run the dashboard, type "streamlit run server.py" within the command terminal.
